@@ -1,0 +1,35 @@
+
+
+(dev-3.8) BigMac-831:nanopb-test mah$ cd lib
+/Users/mah/Documents/PlatformIO/Projects/nanopb-test/lib
+
+(dev-3.8) BigMac-831:lib mah$ git submodule add https://github.com/nanopb/nanopb
+Cloning into '/Users/mah/Documents/PlatformIO/Projects/nanopb-test/lib/nanopb'...
+...
+
+do a checkout of tag 0.4.5 -
+
+(dev-3.8) BigMac-831:nanopb mah$ git checkout 0.4.5
+Note: switching to '0.4.5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+...
+
+adapt for target in platformio.ini
+run the Custom Target "Nanopb generate step" 
+run Upload and Monitor
+
+Serial terminal says:
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1044
+load:0x40078000,len:10124
+load:0x40080400,len:5828
+entry 0x400806a8
+Your lucky number was 13!
+
+^^^^^^^^^ here we go!
