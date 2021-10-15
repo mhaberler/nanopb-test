@@ -2,6 +2,7 @@
 
 #include <pb_encode.h>
 #include <pb_decode.h>
+#include "simple.pb.h"
 
 void setup() {
   // put your setup code here, to run once:
