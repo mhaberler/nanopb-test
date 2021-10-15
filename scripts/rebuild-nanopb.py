@@ -5,7 +5,7 @@ env.AddCustomTarget(
     dependencies=None,
     actions=[
        " (cd proto; "
-       "python ../lib/nanopb/generator/nanopb_generator.py  "
+       "python ../.pio/libdeps/nanopb-example/Nanopb/generator/nanopb_generator.py  "
        "--strip-path --output-dir=../src simple.proto)"
     ],
     title="Nanopb generate step",
